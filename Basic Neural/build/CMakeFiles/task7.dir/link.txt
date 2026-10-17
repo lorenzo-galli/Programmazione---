@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/task7.dir/es_7.cpp.o -o task7
