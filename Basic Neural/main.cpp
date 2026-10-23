@@ -7,6 +7,39 @@
 //   ./build/basic_neural   ./build/task2   ./build/task3   ./build/task4   ./build/task5
 
 int main() {
-    std::cout << "Inizio progetto BASIC_NEURAL++!" << std::endl;
-    return 0;
+
+    // Task 1 
+
+    int N, i;
+
+    std::cout << "Inserisci il numero di input del neurone (es. 784): " << std::endl;
+    std::cin >> N;
+
+    if (N <= 0) {
+        std::cerr << "Errore: il numero di input deve essere positivo." << std::endl;
+        return 1;
+    }
+
+    double* pesi = new double[N];
+    double* input = new double[N];
+
+    // Task 2
+
+    for (i = 0; i < N; ++i) {
+        pesi[i] = 0.01; 
+        input[i] = 1.0; 
+    }
+
+    // Task 3
+
+    double b = 0.5; // Bias
+    double z = 0.0; // Output 
+
+    for (i = 0; i < N; ++i) {
+        z += pesi[i] * input[i];
+    }
+    z += b; // Aggiungo bias solo alla fine una volta
+
+    std::cout << "Risultato del calcolo (Z): <z> = " << z << std::endl;
+  return 0;
 }
