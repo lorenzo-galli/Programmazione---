@@ -1,3 +1,31 @@
-/.DS_Store
-/Prima
-/Basic Neural/build
+# Eseguibili e file binari compilati
+*.out
+*.x
+*.exe
+*.o
+*.obj
+*.bin
+
+# Artefatti generati da CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+Makefile.cmake
+Makefile2
+CMakeConfigureLog.yaml
+*.cmake
+*.marks
+*.yml
+*.plist
+InstallScripts.json
+TargetDirectories.txt
+
+# File di sistema macOS
+.DS_Store
+
+# Ignora tutte le cartelle build a qualsiasi livello di annidamento
+build/
+
+# Ignora le cartelle dei simboli di debug generate su macOS (clang/gcc -g)
+*.dSYM/
