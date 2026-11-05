@@ -26,6 +26,7 @@ TargetDirectories.txt
 
 # Ignora tutte le cartelle build a qualsiasi livello di annidamento
 build/
+vscode/
 
 # Ignora le cartelle dei simboli di debug generate su macOS (clang/gcc -g)
 *.dSYM/
