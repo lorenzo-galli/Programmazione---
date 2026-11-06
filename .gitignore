@@ -30,3 +30,4 @@ vscode/
 
 # Ignora le cartelle dei simboli di debug generate su macOS (clang/gcc -g)
 *.dSYM/
+Lezione 11/.vscode/settings.json
