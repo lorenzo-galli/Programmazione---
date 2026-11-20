@@ -8,8 +8,9 @@ private:
     Eigen::MatrixXd biases;   // b: Nn x 1
 
 public:
-    DenseLayer(int Nn, int Ni);  // neuroni, ingressi
-
+    DenseLayer(int Nn, int Ni, InitType type = InitType::HE,
+           DistroType distro = DistroType::GAUSSIAN);
+           
     Eigen::MatrixXd forward(
         const Eigen::MatrixXd& input) override;
 

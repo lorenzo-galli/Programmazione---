@@ -3,6 +3,9 @@
 
 #include <Eigen/Dense>
 
+enum class InitType   { HE, XAVIER };
+enum class DistroType { UNIFORM, GAUSSIAN };
+
 class Layer {
 public:
     virtual ~Layer() {}
